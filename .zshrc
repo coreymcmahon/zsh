@@ -2,6 +2,10 @@
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
+###
+# Go
+export GOPATH=$HOME/go
+export ANDROID_SDK_ROOT=/Users/coreymcmahon/Library/Android/sdk
 
 ###
 # Zsh options
@@ -33,3 +37,13 @@ zstyle ':vcs_info:git:*' formats 'on %b'
 setopt PROMPT_SUBST
 PROMPT='%n in ${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
 
+###
+## Aliases
+
+alias g=git
+alias ga="git add"
+alias gd="git diff"
+alias gc="git commit"
+alias s="./vendor/bin/sail"
+alias vi="nvim"
+alias vim="nvim"
